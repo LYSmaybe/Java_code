@@ -1,4 +1,4 @@
-
+/*
 public class ParlindromeList {
     public int getLength(Node head){
         while(head != null){
@@ -24,3 +24,4 @@ public class ParlindromeList {
 
     }
 }
+*/
