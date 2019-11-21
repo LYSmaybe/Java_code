@@ -11,7 +11,7 @@ public class Partition {
         while(cur != null){
             if(cur.val < x){
                 if(sHead == null){
-                    sHead = cur;+
+                    sHead = cur;
                 }else {
                     sLast.next = cur;
                 }

@@ -13,12 +13,17 @@ public class Node {
         this(val,null);
     }
 
-    //复写toString方法
-    @Override
-    public String toString() {
-        return "Node{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
+
+    public static void printLinkedList(Node head){
+        Node cur = head;
+        //遍历打印出所有链表的值
+        while(cur != null) {
+            System.out.println(cur.val);
+            cur = cur.next;
+        }
+    }
+
+    public void hello(){
+        System.out.println("Hello");
     }
 }

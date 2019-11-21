@@ -40,15 +40,7 @@ public class MergeTwoLists {
         return nHead;
     }
 
-    public static void printLinkedList(Node head){
-        Node cur = head;
-        //遍历打印出所有链表的值
-        while(cur != null) {
-            System.out.println(cur.val);
-            cur = cur.next;
-        }
-    }
-
+    //
     public static void main(String[] args) {
         Node n3 = new Node(5);
         Node n2 = new Node(4,n3);
@@ -59,7 +51,11 @@ public class MergeTwoLists {
         Node m1 = new Node(2,m2);//289
 
         Node nHead = mergeTwoLists(n1,m1);
-        printLinkedList(nHead);//234589
+        //static的调用：类.方法
+        Node.printLinkedList(nHead);//234589
+
+        //普通方法的调用：先要创建一个对象
+        n3.hello();
     }
 }
 */
