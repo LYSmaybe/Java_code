@@ -4,6 +4,9 @@ public class Node {
     Node next;
 
     //构造器的设置（1.有下一个结点；2.下一个节点为空）
+    Node (){
+    }
+
     Node(int val,Node next){
         this.val = val;
         this.next = next;
@@ -13,6 +16,22 @@ public class Node {
         this(val,null);
     }
 
+    public static Node buildLinkedList(){
+        Node n1 = new Node(1);
+        Node n2 = new Node(2);
+        Node n3= new Node(3);
+        Node n4 = new Node(4);
+        Node n5 = new Node(5);
+
+        //结点之间连接起来
+        n1.next = n2;
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n5;
+
+        //返回头结点，可以依次找到链表后面的数字
+        return n1;
+    }
 
     public static void printLinkedList(Node head){
         Node cur = head;
