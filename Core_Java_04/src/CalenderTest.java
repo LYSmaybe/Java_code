@@ -1,6 +1,6 @@
-import java.time.DayOfWeek;
-import java.time.LocalDate;
+import java.time.*;
 
+//打印当月日历表并标出当天
 public class CalenderTest {
     public static  void main(String[] args){
         //构造一个对象，初始化为当前时间
