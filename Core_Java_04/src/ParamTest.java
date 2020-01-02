@@ -1,3 +1,4 @@
+/*
 class Employee{
     private String name;
     private double salary;
@@ -66,3 +67,4 @@ public class ParamTest {
         System.out.println("End of method: y = " + y.getName());
     }
 }
+*/
